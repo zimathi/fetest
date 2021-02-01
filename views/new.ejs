@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>問題作成</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+  </head>
+  <body>
+    <h1>問題を作成</h1>
+
+    <form class="edit-wrapper" action="/create" method="post">
+      <p>
+        Q:<br>
+        <textarea type="text" name="que"></textarea>
+      </p>
+      <p>
+        A:<br>
+        <textarea type="text" name="ans"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="作成する">
+      </p>
+      <p>
+         <!-- <a href="/index">一覧へ戻る</a><br> -->
+         <a href="/top">トップ画面</a>
+      </p>
+    </form>
+  </body>
+</html>

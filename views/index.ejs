@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <div class="index">
+
+        <h1>質問と答えの一覧</h1>
+
+        <p class="menu-item"><a href="/new" class="menu-item-link">問題を作成する</a></p>
+
+           <table class="tablehead" border="1" style="border-collapse: collapse">
+               <thead>
+                <tr>
+                    <th>問題</th>
+                    <th>答え</th>
+                    <th class="edit-table">編集</th>
+                </tr>
+              </thead>
+           </table>
+
+          <% lists.forEach((list)=>{ %>
+             <table border="1" style="border-collapse: collapse">
+                <tbody>
+                  <tr>
+                    <td><%= list.Q %></td>
+                    <td><%= list.A %></td>
+                    <td class="edit-table">
+
+                      <a href="/edit/<%= list.id %>">編集</a>
+                      <a href="/delete/<%= list.id %>">削除</a>
+
+                    </td>
+                  </tr>
+                </tbody>
+
+             </table>
+        <% }) %>
+
+        <p>
+
+           <a href="/top">トップ画面</a>
+
+        </p>
+    </div>
+  </body>
+</html>

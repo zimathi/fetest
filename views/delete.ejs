@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>削除</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+  </head>
+  <body>
+    <h1>問題の削除</h1>
+
+      <div class="edit-wrapper">
+        <form action="/delete/<%= list.id %>" method="post">
+          <p>
+            Q:<br>
+            <textarea type="text" name="que"><%= list.Q %></textarea>
+          </p>
+          <p>
+            A:<br>
+            <textarea type="text" name="que"><%= list.A %></textarea>
+          </p>
+            <h3>削除しますか？</h3>
+          <p>
+            <input type="submit" value="削除">
+          </p>
+          <p>
+             <a href="/index">一覧へ戻る</a>
+          </p>
+        </form>
+      </div>
+  </body>
+</html>

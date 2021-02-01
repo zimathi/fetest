@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>ランダム問題</title>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+  </head>
+  <body>
+    <h1>問題です！！</h1>
+
+    <div class="edit-wrapper">
+          Q:<br>
+          <textarea type="text" name="que"><%= list.Q %></textarea>
+        <p class="answer-btn">答え表示</p>
+
+        <div class="answer">
+          A:<br>
+          <textarea type="text" name="ans"><%= list.A %></textarea>
+        </div>
+    </div>
+        <br><br><br><br><br>
+     <!-- <div class="answer-top"> -->
+       <p class="menu-item"><a href="/quiz" class="menu-item-link">次のランダム問題</a></p>
+       <a href="/top">トップ画面</a>
+     <!-- </div> -->
+
+    <script type="text/javascript" src="/js/script.js"></script>
+  </body>
+</html>
